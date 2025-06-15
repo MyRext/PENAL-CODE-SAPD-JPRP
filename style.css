@@ -1,69 +1,55 @@
 body {
   font-family: Arial, sans-serif;
-  padding: 20px;
-  background: #f4f4f4;
+  background: #f5f5f5;
+  margin: 20px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#search, #arrestCommand {
+  flex: 1;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.section {
+  margin-bottom: 30px;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #ccc;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
-  margin-top: 20px;
-  background: white;
+  margin-top: 10px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
 }
 
 th, td {
   padding: 10px;
-  border: 1px solid #ccc;
-  text-align: center;
-  word-wrap: break-word;
   text-align: left;
 }
 
-input[type="text"] {
-  padding: 10px;
-  width: 100%;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-}
-
-button {
-  padding: 5px 10px;
-  cursor: pointer;
-}
-
 .copyable {
-  cursor: pointer;
   color: blue;
-  text-decoration: underline;
-}
-
-#arrestContainer {
-  margin-top: 20px;
-}
-
-#arrestCommand {
-  background: #ddd;
-  padding: 10px;
-  font-weight: bold;
-  user-select: all;
   cursor: pointer;
-  display: inline-block;
-}
-
-#resetBtn {
-  margin-top: 10px;
-}
-
-.category {
-  margin-top: 40px;
-  background: #ffffff;
-  padding: 15px;
-  border-radius: 8px;
-  box-shadow: 0 0 4px rgba(0,0,0,0.1);
-}
-
-.category h2 {
-  margin-top: 0;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
+  text-decoration: underline;
 }
