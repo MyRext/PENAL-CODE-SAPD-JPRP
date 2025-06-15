@@ -744,7 +744,7 @@ resetBtn.addEventListener('click', () => {
 
 // Update arrest command
 function updateArrestCommand() {
-  const command = `/arrest ${selectedCodes.join(', ')} ${totalFine} ${totalTime}`;
+  const command = `/arrest [ID] ${totalFine} ${totalTime} ${selectedCodes.join(', ')}`;
   arrestCommandInput.value = selectedCodes.length ? command : '/arrest';
     const arrestElement = document.getElementById('arrestCommand');
   arrestElement.textContent = command;
