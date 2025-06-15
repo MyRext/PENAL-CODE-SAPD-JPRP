@@ -1,6 +1,6 @@
 const tableData = [
   {
-    section: "Driver Vil",
+    section: "Driver Violation",
     rows: [
       {
         nomor: 1,
